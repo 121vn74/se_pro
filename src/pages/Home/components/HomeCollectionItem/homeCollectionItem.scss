@@ -1,0 +1,50 @@
+@import "../../../../vendors/mixins";
+@import "../../../../vendors/variables";
+
+.collection-title {
+    background-image: url(https://th.bing.com/th/id/OIP.41F7OT4u6h2WTEKwWjKq2AHaE7?pid=ImgDet&rs=1);
+  //  background-color: #2c3190;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #f4f4f4;
+    @include flexCenter;
+    flex-direction: column;
+
+    @media(max-width: 767px) {
+        padding: 50px 0;
+    }
+
+    .title-content {
+        width: 70%;
+
+        @media(max-width: 767px) {
+            width: 100%;
+            text-align: center;
+        }
+
+        h2 {
+            font-weight: 500;
+            color: $main-color;
+        }
+
+        h6 {
+            font-size: 15px;
+            font-weight: 500;
+            color: $main-color;
+        }
+    }
+}
+
+.collection-img {
+    text-align: center;
+
+    img {
+        max-width: 100%;
+
+        @media(min-width: 767px) {
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
